@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "Oceanic Aviator Sunglasses",
+    "brand": "SunShade",
+    "price": 29.99,
+    "rating": 4.8,
+    "stock": 45,
+    "description": "Timeless aviator style with polarized lenses to protect your eyes from harsh summer glare.",
+    "image": "https://i.ibb.co/tMXN03C1/aviator-sunglasses-e76b0b85.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "SPF 50+ Mineral Sunscreen",
+    "brand": "GlowGuard",
+    "price": 18.50,
+    "rating": 4.9,
+    "stock": 120,
+    "description": "Reef-safe, lightweight mineral sunscreen that leaves no white cast. Perfect for daily beach use.",
+    "image": "https://i.ibb.co/gMTSwSV9/mineral-sunscreen-6f93c9f2.jpg",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Breeze Linen Summer Shirt",
+    "brand": "Coastal Wear",
+    "price": 45.00,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Breathable, lightweight linen shirt designed to keep you cool during hot summer days.",
+    "image": "https://i.ibb.co/C3RhvR0V/linen-shirt-d3954e88.jpg",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "name": "Wide Brim Straw Panama Hat",
+    "brand": "Oasis Hats",
+    "price": 22.00,
+    "rating": 4.7,
+    "stock": 60,
+    "description": "Hand-woven straw hat offering excellent UV protection and a chic coastal aesthetic.",
+    "image": "https://i.ibb.co/SX0Y3dD3/panama-hat-3948532b.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Thermo-Cool Water Bottle",
+    "brand": "HydraMate",
+    "price": 24.99,
+    "rating": 4.9,
+    "stock": 85,
+    "description": "Double-walled vacuum insulated bottle that keeps your drinks ice cold for up to 24 hours.",
+    "image": "https://i.ibb.co/8JYpdS8/water-bottle-e36179f8.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "Aloe Vera Cooling Gel",
+    "brand": "Nature's Touch",
+    "price": 12.99,
+    "rating": 4.5,
+    "stock": 200,
+    "description": "Soothing after-sun aloe vera gel to hydrate and repair sun-exposed skin instantly.",
+    "image": "https://i.ibb.co/QvRVJ19Q/aloe-gel-d5d5cf3d.jpg",
+    "category": "Skincare"
+  },
+  {
+    "id": 7,
+    "name": "Woven Beach Tote Bag",
+    "brand": "Sand & Sea",
+    "price": 34.50,
+    "rating": 4.4,
+    "stock": 25,
+    "description": "Spacious and durable woven tote bag, perfect for carrying your towels, sunscreen, and books.",
+    "image": "https://i.ibb.co/cSnmJw5y/beach-tote-69e6d1ef.jpg",
+    "category": "Beach Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Ultra-Soft Microfiber Beach Towel",
+    "brand": "TideLinens",
+    "price": 19.99,
+    "rating": 4.6,
+    "stock": 150,
+    "description": "Quick-drying, sand-resistant microfiber towel with vibrant summer patterns.",
+    "image": "https://i.ibb.co/h1BfvLys/beach-towel-1066d216.jpg",
+    "category": "Beach Accessories"
+  },
+  {
+    "id": 9,
+    "name": "Classic Rubber Flip Flops",
+    "brand": "WaveRunners",
+    "price": 15.00,
+    "rating": 4.3,
+    "stock": 90,
+    "description": "Comfortable, slip-resistant flip flops perfect for the poolside or sandy walks.",
+    "image": "https://i.ibb.co/cSKjTPXD/flip-flops-8d96ef6d.jpg",
+    "category": "Footwear"
+  },
+  {
+    "id": 10,
+    "name": "Tropical Floral Swim Trunks",
+    "brand": "Coastal Wear",
+    "price": 28.00,
+    "rating": 4.7,
+    "stock": 40,
+    "description": "Quick-dry fabric with a comfortable mesh lining, featuring a bold tropical print.",
+    "image": "https://i.ibb.co/XkMvZqXV/swim-trunks-e619c582.jpg",
+    "category": "Clothing"
+  },
+  {
+    "id": 11,
+    "name": "Portable UV Beach Umbrella",
+    "brand": "SunShade",
+    "price": 42.50,
+    "rating": 4.8,
+    "stock": 15,
+    "description": "Lightweight, easy-to-carry beach umbrella with a UV-blocking canopy to keep you in the shade.",
+    "image": "https://i.ibb.co/cKhFT19B/beach-umbrella-56536d32.jpg",
+    "category": "Beach Accessories"
+  }
+]
