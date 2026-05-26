@@ -3,7 +3,6 @@ import img from '@/assets/hero.png'
 import Image from 'next/image';
 import data from '@/data/products.json';
 import CardDesign from './Card';
-import Link from 'next/link';
 
 const Hero = () => {
 
