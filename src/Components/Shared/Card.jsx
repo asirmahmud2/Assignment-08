@@ -45,14 +45,12 @@ const CardDesign = ({ product }) => {
                 {/* BUTTON */}
 
                 <Link
-                    href={`/products/${id}`}
+                    href={`/details/${id}`}
                     className='btn w-full mt-6 rounded-full bg-[#FF7A00] hover:bg-[#E56700] border-0 text-white text-base shadow-lg shadow-orange-200'
                 >
                     View Details
                 </Link>
-
             </div>
-
         </div>
 
     );
