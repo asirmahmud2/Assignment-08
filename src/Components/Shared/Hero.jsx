@@ -5,10 +5,10 @@ import data from '@/data/products.json';
 import CardDesign from './Card';
 
 const Hero = () => {
-
+    
     const products = data.slice(0, 3);
     return (
-
+        
         <div className='space-y-24'>
             <div className=''>
                 <Image

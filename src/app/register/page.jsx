@@ -99,7 +99,6 @@ const RegisterPage = () => {
                                     })}
                                     className='w-full rounded-2xl border border-gray-200 bg-white px-5 py-4 outline-none focus:border-[#FF7A00] transition-all duration-300'
                                 />
-
                                 {
                                     errors.email &&
                                     <p className='text-red-500 mt-2 text-sm'>
