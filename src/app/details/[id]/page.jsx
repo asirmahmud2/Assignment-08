@@ -24,7 +24,7 @@ const ProductDetails = async ({ params }) => {
                             width={800}
                             height={800}
                             unoptimized
-                            className='w-full h-[500px] object-cover rounded-[30px] hover:scale-105 transition-all duration-700'
+                            className='w-full h-125 object-cover rounded-[30px] hover:scale-105 transition-all duration-700'
                         />
 
                     </div>

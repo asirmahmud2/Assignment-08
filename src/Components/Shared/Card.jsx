@@ -9,7 +9,7 @@ const CardDesign = ({ product }) => {
 
     return (
 
-        <div className='group rounded-[32px] bg-white/70 backdrop-blur-xl border border-white/40 overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500'>
+        <div className='group rounded-4xl bg-white/70 backdrop-blur-xl border border-white/40 overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500'>
             <div className='relative overflow-hidden bg-[#FFF8F0]'>
                 <Image
                     src={image}
@@ -17,7 +17,7 @@ const CardDesign = ({ product }) => {
                     width={500}
                     height={500}
                     unoptimized
-                    className='w-full h-[300px] object-cover'
+                    className='w-full h-75 object-cover'
                 />
             </div>
 
