@@ -10,6 +10,12 @@ import logo from "@/assets/main.png";
 import { FcGoogle } from 'react-icons/fc';
 import { authClient } from '@/lib/auth-client';
 
+const handleGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+        provider: "google",
+    });
+}
+
 const RegisterPage = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -115,9 +121,9 @@ const RegisterPage = () => {
                                     placeholder='Enter your photo url'
                                     {...register("photo", {
                                         required: "Photo URL is required"
-                                    })} 
+                                    })}
                                     className='w-full rounded-2xl border border-gray-200 bg-white px-5 py-4 outline-none focus:border-[#FF7A00] transition-all duration-300'
-                                /> 
+                                />
                                 {
                                     errors.photo &&
                                     <p className='text-red-500 mt-2 text-sm'>
@@ -161,7 +167,9 @@ const RegisterPage = () => {
                             </p>
                             <div className='flex-1 h-[1px] bg-gray-200'></div>
                         </div>
-                        <button className='btn w-full rounded-2xl bg-white border border-gray-200 text-[#1E1E1E] hover:bg-[#FDEEDC] h-14 text-base shadow-sm'>
+                        <button className='btn w-full rounded-2xl bg-white border border-gray-200 text-[#1E1E1E] hover:bg-[#FDEEDC] h-14 text-base shadow-sm'
+                            onClick={handleGoogleSignIn}
+                        >
                             <FcGoogle className='text-2xl' />
                             Continue with Google
                         </button>

@@ -17,8 +17,14 @@ const LoginPage = () => {
         handleSubmit,
         formState: { errors }
     } = useForm();
-    const handleLogin = async(d) => {
 
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
+
+    const handleLogin = async (d) => {
         const { data, error } = await authClient.signIn.email({
             email: d.email, // required
             password: d.password, // required
@@ -39,7 +45,7 @@ const LoginPage = () => {
                     <div className='relative z-10 text-center'>
                         <Lottie
                             animationData={loginAnimation}
-                            loop={true}/>
+                            loop={true} />
                         <h2 className='text-5xl font-black text-white mt-10 leading-tight'>
                             Welcome Back To
                             <span className='text-[#FF7A00]'> SunCart</span>
@@ -130,7 +136,9 @@ const LoginPage = () => {
                             </p>
                             <div className='flex-1 h-[1px] bg-gray-200'></div>
                         </div>
-                        <button className='btn w-full rounded-2xl bg-white border border-gray-200 text-[#1E1E1E] hover:bg-[#FDEEDC] h-14 text-base shadow-sm'>
+                        <button className='btn w-full rounded-2xl bg-white border border-gray-200 text-[#1E1E1E] hover:bg-[#FDEEDC] h-14 text-base shadow-sm'
+                        onClick={handleGoogleSignIn}
+                        >
                             <FcGoogle className='text-2xl' />
                             Continue with Google
                         </button>
