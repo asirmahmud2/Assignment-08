@@ -9,6 +9,7 @@ import registerAnimation from "@/assets/login.json";
 import logo from "@/assets/main.png";
 import { FcGoogle } from 'react-icons/fc';
 import { authClient } from '@/lib/auth-client';
+import { showToast } from "nextjs-toast-notify";
 
 const handleGoogleSignIn = async () => {
     const data = await authClient.signIn.social({
@@ -17,7 +18,6 @@ const handleGoogleSignIn = async () => {
 }
 
 const RegisterPage = () => {
-
     const { register, handleSubmit, formState: { errors } } = useForm();
     const handleRegister = async (d) => {
         const { data, error } = await authClient.signUp.email({
@@ -27,7 +27,18 @@ const RegisterPage = () => {
             image: d.photo,
             callbackURL: "/",
         });
-        console.log(data, error);
+        if (error) {
+            showToast.error(error.message, {
+                duration: 4000,
+                position: "top-right",
+            });
+            return;
+        }
+
+        showToast.success("Account Created Successfully", {
+            duration: 3000,
+            position: "top-right",
+        });
     }
 
     return (

@@ -9,6 +9,7 @@ import loginAnimation from "@/assets/login.json";
 import logo from "@/assets/main.png";
 import { FcGoogle } from 'react-icons/fc';
 import { authClient } from '@/lib/auth-client';
+import { showToast } from "nextjs-toast-notify";
 
 const LoginPage = () => {
 
@@ -25,14 +26,27 @@ const LoginPage = () => {
     }
 
     const handleLogin = async (d) => {
-        const { data, error } = await authClient.signIn.email({
-            email: d.email, // required
-            password: d.password, // required
-            rememberMe: true,
-            callbackURL: "/",
+
+    const { data, error } = await authClient.signIn.email({
+        email: d.email,
+        password: d.password,
+        rememberMe: true,
+        callbackURL: "/",
+    });
+
+    if (error) {
+        showToast.error(error.message, {
+            duration: 4000,
+            position: "top-right",
         });
-        console.log(data, error);
+        return;
     }
+    showToast.success("Login Successful", {
+        duration: 3000,
+        position: "top-right",
+    });
+
+}
 
     return (
 
