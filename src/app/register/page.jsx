@@ -72,7 +72,8 @@ const RegisterPage = () => {
                             <Image src={logo} alt='logo' className='w-16 h-16 object-contain' />
                             <div>
                                 <h2 className='text-3xl font-black text-[#1E1E1E]'>
-                                    Sun<span className='text-[#FF7A00]'>Cart</span>
+                                    <span className='text-[#F7A600]'>Sun</span>
+                                    <span className='text-[#004E96]'>Cart</span>
                                 </h2>
                                 <p className='text-xs tracking-[4px] text-[#6B7280] mt-1'> SUMMER ESSENTIALS </p>
                             </div>

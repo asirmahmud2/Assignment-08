@@ -52,7 +52,7 @@ const Navbar = () => {
     return (
 
         <div className="sticky top-0 z-50 backdrop-blur-xl bg-[#FFF8F0]/80 border-b border-white/20">
-            <div className='navbar container mx-auto px-2 lg:px-0'> 
+            <div className='navbar container mx-auto px-2 lg:px-0'>
                 <div className="navbar-start">
                     <div className="dropdown lg:hidden">
                         <div
@@ -93,8 +93,9 @@ const Navbar = () => {
                             alt='logo'
                             className='w-14 h-14 object-contain'
                         />
-                        <h2 className='text-2xl font-black text-[#1E1E1E]'>
-                            Sun<span className='text-[#FF7A00]'>Cart</span>
+                        <h2 className='text-2xl font-black'>
+                            <span className='text-[#F5A000]'>Sun</span>
+                            <span className='text-[#0056A6]'>Cart</span>
                         </h2>
                     </Link>
 

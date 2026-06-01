@@ -14,7 +14,8 @@ const Footer = () => {
                             <Image src={detimg} alt='logo' className='w-16 h-16 object-contain' />
                             <div>
                                 <h2 className='text-3xl font-black'>
-                                    Sun<span className='text-[#FF7A00]'>Cart</ span>
+                                    <span className='text-[#F7A600]'>Sun</span>
+                                    <span className='text-[#004E96]'>Cart</span>
                                 </h2>
                                 <p className='text-xs tracking-[4px] text-gray-400 mt-1'>
                                     SUMMER ESSENTIALS
@@ -50,7 +51,7 @@ const Footer = () => {
                         <div className='space-y-4 text-gray-400'>
                             <p> Chittagong, Bangladesh </p>
                             <p> support@suncart.com </p>
-                             <p> +880 1234-567890 </p>
+                            <p> +880 1234-567890 </p>
 
                         </div>
 
